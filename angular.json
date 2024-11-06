@@ -51,7 +51,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/assests/styles/styles.scss"],
+            "styles": ["src/assets/styles/styles.scss"],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,

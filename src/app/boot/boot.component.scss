@@ -1,8 +1,23 @@
-.boot-screen {
+::ng-deep.boot-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--dark-0);
   height: 100vh;
+
+  &__logo {
+    width: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__progress-bar {
+    .p-progress {
+      background-color: var(--mac-grey);
+
+      .p-progress-value {
+        background-color: var(--light-0);
+      }
+    }
+  }
 }

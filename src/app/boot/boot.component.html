@@ -1,10 +1,10 @@
 <div class="boot-screen">
-  <div class="boot-screen__content">
-    <div class="boot-screen__logo">
-      <img src="assets/images/logo.png" alt="Logo">
-    </div>
-    <div class="boot-screen__progress">
-      <div class="boot-screen__progress-bar"></div>
-    </div>
+  <img class="boot-screen__logo" src="apple-logo.png" alt="Logo" />
+  <div class="boot-screen__progress-bar">
+    <p-progressBar [value]="progressBarValue" [showValue]="false" [style]="{
+      'height': '6px',
+      'width': '150px'
+    }" />
   </div>
+
 </div>
