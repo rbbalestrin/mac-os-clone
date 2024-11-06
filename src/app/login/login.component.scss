@@ -1,0 +1,60 @@
+@import "helpers";
+
+::ng-deep.login-screen {
+  @include flex(column, center, center);
+
+  @include bg-image("/desktop-background.jpg", cover, center);
+
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--mac-grey);
+  position: relative;
+
+  &__logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+
+  &__username {
+    color: var(--mac-grey);
+    text-shadow: 1px 1px var(--dark-0);
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+
+    i {
+      margin-top: -7px;
+    }
+    .p-inputtext {
+      background-color: rgba($color: #000000, $alpha: 0.1);
+      outline: none;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      color: var(--light-0);
+      padding-left: 20px;
+
+      &::placeholder {
+        color: var(--mac-grey);
+      }
+
+      &:hover,
+      &:enabled:focus {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  &__password-hint {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  &__machine-controls {
+    position: absolute;
+    bottom: 40px;
+  }
+}
